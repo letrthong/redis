@@ -4,10 +4,10 @@ services:
   redis:
     image: 'bitnami/redis:6.0.9'
     restart: always
-    # command: redis-server --requirepass P@ssw0rd123
+    command: redis-server --requirepass P@ssw0rd123
     ports:
       - "6379:6379"
-    environment:
-      - ALLOW_EMPTY_PASSWORD=yes
-      - REDIS_MASTER_PASSWORD=admin
-      - REDIS_PASSWORD=admin
+    # environment:
+    #   - ALLOW_EMPTY_PASSWORD=yes
+    #   - REDIS_MASTER_PASSWORD=admin
+    #   - REDIS_PASSWORD=admin
