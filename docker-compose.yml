@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  redis:
+    image: 'bitnami/redis:6.0.9'
+    restart: always
+    ports:
+      - "6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_MASTER_PASSWORD=admin
+      - REDIS_PASSWORD=admin
