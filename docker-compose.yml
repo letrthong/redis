@@ -6,7 +6,7 @@ services:
     restart: always
     ports:
       - "6379:6379"
-    # environment:
+    environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_MASTER_PASSWORD=admin
       - REDIS_PASSWORD=admin
