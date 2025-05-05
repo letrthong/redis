@@ -10,13 +10,13 @@ docker stop $(docker ps -a -q)
 # Removing all containers
 docker container prune
 
-#remove all containers
+# remove all containers
 docker rm $(docker ps -a -q)
 
-#remove all unused images to free disk
+# remove all unused images to free disk
 docker image prune -a -f
 
-#remove the rest containers if have
+# remove the rest containers if have
 docker compose down
 
 # build images
