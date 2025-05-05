@@ -5,5 +5,6 @@ SQLyog - 64 bit Trial
 
 # https://github.com/bitnami/containers/tree/main/bitnami/
 
-# netstat -lntu
+# Get a list of all the listening TCP and UDP ports 
+netstat -lntu
 
