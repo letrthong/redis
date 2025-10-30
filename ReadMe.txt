@@ -8,3 +8,5 @@ SQLyog - 64 bit Trial
 # Get a list of all the listening TCP and UDP ports 
 netstat -lntu
 
+#  How to Fix the Interrupted dpkg Error
+sudo dpkg --configure -a
