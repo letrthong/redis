@@ -10,3 +10,8 @@ netstat -lntu
 
 #  How to Fix the Interrupted dpkg Error
 sudo dpkg --configure -a
+
+
+# 
+systemctl start docker
+docker info
