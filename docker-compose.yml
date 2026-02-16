@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   redis:
-    image: 'bitnami/redis:8.6.0'
+    image: 'bitnami/redis:latest'
     restart: always
     ports:
       - "6379:6379"
