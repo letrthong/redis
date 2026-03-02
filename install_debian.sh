@@ -1,5 +1,9 @@
 # https://docs.docker.com/engine/install/debian/
-apt-get update
+#
+#uname -a
+# Linux instance-redis 5.10.0-38-cloud-amd64 #1 SMP Debian 5.10.249-1 (2026-02-10) x86_64 GNU/Linux
+#
+
 apt-get install \
     ca-certificates \
     curl \
