@@ -10,3 +10,8 @@ services:
       - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_MASTER_PASSWORD=admin
       - REDIS_PASSWORD=admin
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+          cpus: '1.0'

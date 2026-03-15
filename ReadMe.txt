@@ -15,3 +15,8 @@ sudo dpkg --configure -a
 # 
 systemctl start docker
 docker info
+
+
+ echo "CPU Cores: $(nproc)"
+
+  docker stats --no-stream
