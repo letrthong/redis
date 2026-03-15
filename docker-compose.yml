@@ -15,4 +15,3 @@ services:
         limits:
           memory: 700M
           cpus: '1.0'
-    restart: always
