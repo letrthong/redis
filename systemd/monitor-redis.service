@@ -1,0 +1,14 @@
+[Unit]
+Description=Monitor Redis
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/monitor_redis/monitor-redis.sh
+WorkingDirectory=/opt/monitor_redis
+StandardOutput=append:/opt/monitor_redis/redis_history.log
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
