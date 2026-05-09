@@ -20,3 +20,5 @@ docker info
  echo "CPU Cores: $(nproc)"
 
   docker stats --no-stream
+# system-d
+  systemctl status monitor-redis
