@@ -9,5 +9,7 @@ fi
 
 cp -fv ./monitor-redis.service /etc/systemd/system/
 systemctl daemon-reload
+systemctl enable monitor-redis
+
 systemctl start monitor-redis
-systemctl enable monitor-redis # Tự chạy khi khởi động máy
+systemctl status monitor-redis
