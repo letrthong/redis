@@ -8,6 +8,8 @@ fi
 
 
 cp -fv ./monitor-redis.service /etc/systemd/system/
+cp -fv ./monitor-redis.sh /opt/monitor_redis
+
 systemctl daemon-reload
 systemctl enable monitor-redis
 
